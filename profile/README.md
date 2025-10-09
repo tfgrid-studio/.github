@@ -531,6 +531,8 @@ See individual repositories for details.
 
 **Made with ❤️ for the decentralized web**
 
-[Get Started](https://github.com/tfgrid-compose/tfgrid-deployer) • [Documentation](https://github.com/tfgrid-compose/tfgrid-docs) • [Community](https://github.com/orgs/tfgrid-compose/discussions)
+[Website](https://tfgrid.studio) • [Get Started](https://docs.tfgrid.studio/getting-started/quickstart) • [Documentation](https://docs.tfgrid.studio) • [Community](https://github.com/orgs/tfgrid-studio/discussions)
+
+**© 2025 TFGrid Studio - Apache 2.0 License**
 
 </div>
