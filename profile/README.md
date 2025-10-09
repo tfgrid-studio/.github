@@ -1,20 +1,34 @@
-# TFGrid Compose
+# TFGrid Studio
 
-**Universal deployment orchestrator for ThreeFold Grid**
+<div align="center">
 
-Deploy applications to decentralized infrastructure using industry-standard tools.
+**Complete Development Platform for ThreeFold Grid**
+
+Build, deploy, and scale decentralized applications with enterprise-grade tools
+
+[Website](https://tfgrid.studio) • [Documentation](https://docs.tfgrid.studio) • [Get Started](https://docs.tfgrid.studio/getting-started/quickstart)
+
+</div>
 
 ---
 
-## 🚀 What is TFGrid Compose?
+## 🎯 What is TFGrid Studio?
 
-TFGrid Compose makes deploying applications to ThreeFold Grid as simple as:
+**TFGrid Studio** is a complete development platform for ThreeFold Grid. From AI-powered coding to production deployment, we provide everything you need to build decentralized applications.
+
+**Our Products:**
+- 🛠️ **TFGrid Compose** - Docker-compose-like CLI (✅ Available Now)
+- 🤖 **TFGrid AI Agent** - AI coding environment (✅ Available Now)
+- 🌐 **TFGrid Web** - Visual dashboard (🚧 Q2 2026)
+- 🏪 **TFGrid Marketplace** - App store (🚧 Q3 2026)
+- 🏢 **TFGrid Enterprise** - Enterprise features (📋 Custom)
 
 ```bash
+# Deploy any application with one command
 tfgrid-compose up my-app
 ```
 
-**No vendor lock-in. Industry standards. Decentralized infrastructure.**
+**Open source CLI. Enterprise-ready platform. No vendor lock-in.**
 
 ---
 
@@ -35,17 +49,18 @@ tfgrid-compose up my-app
 
 | Repository | Description | Status |
 |------------|-------------|--------|
-| [tfgrid-deployer](https://github.com/tfgrid-compose/tfgrid-deployer) | Universal deployment orchestrator | ✅ **Working!** |
-| [tfgrid-ai-agent](https://github.com/tfgrid-compose/tfgrid-ai-agent) | AI coding agent (reference app) | ✅ **Working!** |
-| [tfgrid-docs](https://github.com/tfgrid-compose/tfgrid-docs) | Public documentation | 🚧 Coming Soon |
+| [tfgrid-compose](https://github.com/tfgrid-studio/tfgrid-compose) | Main CLI tool (formerly tfgrid-deployer) | ✅ **Production Ready (v1.0.0)** |
+| [tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent) | AI coding agent | ✅ **Production Ready (v2.0.0)** |
+| [tfgrid-docs](https://github.com/tfgrid-studio/tfgrid-docs) | Complete documentation | ✅ **Live** ([docs.tfgrid.studio](https://docs.tfgrid.studio)) |
+| [tfgrid-www](https://github.com/tfgrid-studio/tfgrid-www) | Marketing website | ✅ **Live** ([tfgrid.studio](https://tfgrid.studio)) |
 
 ### 🔒 Commercial (Private - Future)
 
-| Repository | Description | Status |
-|------------|-------------|--------|
-| tfgrid-web | Web dashboard (SaaS) | 📋 Planned |
-| tfgrid-marketplace | App marketplace | 📋 Planned |
-| tfgrid-enterprise | Enterprise features | 📋 Planned |
+| Repository | Description | Status | Timeline |
+|------------|-------------|--------|----------|
+| tfgrid-web | Web dashboard (SaaS) | 📋 Planned | Q2 2026 |
+| tfgrid-marketplace | App marketplace | 📋 Planned | Q3 2026 |
+| tfgrid-enterprise | Enterprise features (SSO, audit logs) | 📋 Custom | On demand |
 
 ---
 
@@ -54,13 +69,12 @@ tfgrid-compose up my-app
 ### Install
 
 ```bash
-git clone https://github.com/tfgrid-compose/tfgrid-deployer
-cd tfgrid-deployer
-chmod +x cli/tfgrid-compose
-
-# Optional: Add to PATH
-ln -s $(pwd)/cli/tfgrid-compose /usr/local/bin/tfgrid-compose
+git clone https://github.com/tfgrid-studio/tfgrid-compose
+cd tfgrid-compose
+make install
 ```
+
+**That's it!** The CLI is now in your PATH.
 
 ### Deploy an App
 
