@@ -501,9 +501,11 @@ Isolated AI coding environment with loop technique
 
 ## 🔗 Links
 
-- **GitHub:** [github.com/tfgrid-compose](https://github.com/tfgrid-compose)
-- **Deployer:** [tfgrid-deployer](https://github.com/tfgrid-compose/tfgrid-deployer)
-- **Docs:** [tfgrid-docs](https://github.com/tfgrid-compose/tfgrid-docs)
+- **Website:** [tfgrid.studio](https://tfgrid.studio)
+- **Documentation:** [docs.tfgrid.studio](https://docs.tfgrid.studio)
+- **GitHub:** [github.com/tfgrid-studio](https://github.com/tfgrid-studio)
+- **Main CLI:** [tfgrid-compose](https://github.com/tfgrid-studio/tfgrid-compose)
+- **AI Agent:** [tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent)
 - **ThreeFold:** [threefold.io](https://threefold.io)
 
 ---
@@ -511,8 +513,8 @@ Isolated AI coding environment with loop technique
 ## 📧 Contact
 
 - **Issues:** Open an issue in the relevant repository
-- **Discussions:** [GitHub Discussions](https://github.com/orgs/tfgrid-compose/discussions)
-- **Email:** contact@tfgrid-compose.io (coming soon)
+- **Discussions:** [GitHub Discussions](https://github.com/orgs/tfgrid-studio/discussions)
+- **Website:** [tfgrid.studio](https://tfgrid.studio)
 
 ---
 
