@@ -475,11 +475,11 @@ See individual repositories for CONTRIBUTING.md guides.
 
 ## 📖 Documentation
 
-- **[Quick Start](https://github.com/tfgrid-compose/tfgrid-deployer#quick-start)** - Get started in 5 minutes
-- **[Patterns](https://github.com/tfgrid-compose/tfgrid-deployer#patterns)** - Available deployment patterns
-- **[App Development](https://github.com/tfgrid-compose/tfgrid-docs)** - Create deployable apps
-- **[Pattern Development](https://github.com/tfgrid-compose/tfgrid-docs)** - Create new patterns
-- **[API Reference](https://github.com/tfgrid-compose/tfgrid-docs)** - Complete API docs
+- **[Quick Start](https://docs.tfgrid.studio/getting-started/quickstart)** - Get started in 5 minutes
+- **[Installation](https://docs.tfgrid.studio/getting-started/installation)** - Complete setup guide
+- **[Patterns](https://docs.tfgrid.studio/patterns/overview)** - Available deployment patterns
+- **[Roadmap](https://docs.tfgrid.studio/roadmap/current)** - Current status & planned features
+- **[Complete Docs](https://docs.tfgrid.studio)** - Full documentation site
 
 ---
 
@@ -487,8 +487,8 @@ See individual repositories for CONTRIBUTING.md guides.
 
 ### Example Apps
 
-**AI Coding Agent** - [tfgrid-ai-agent](https://github.com/tfgrid-compose/tfgrid-ai-agent)  
-Isolated AI coding environment with loop technique
+**AI Coding Agent** - [tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent)  
+Isolated AI coding environment with loop technique and Qwen integration
 
 **Coming Soon:**
 - WordPress (gateway pattern)
