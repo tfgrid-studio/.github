@@ -49,7 +49,7 @@ tfgrid-compose up my-app
 
 | Repository | Description | Status |
 |------------|-------------|--------|
-| [tfgrid-compose](https://github.com/tfgrid-studio/tfgrid-compose) | Main CLI tool (formerly tfgrid-deployer) | ✅ **Production Ready (v1.0.0)** |
+| [tfgrid-compose](https://github.com/tfgrid-studio/tfgrid-compose) | Main CLI tool (formerly tfgrid-deployer) | ✅ **Production Ready (v2.0.0 - Complete First Layer)** |
 | [tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent) | AI coding agent | ✅ **Production Ready (v2.0.0)** |
 | [tfgrid-docs](https://github.com/tfgrid-studio/tfgrid-docs) | Complete documentation | ✅ **Live** ([docs.tfgrid.studio](https://docs.tfgrid.studio)) |
 | [tfgrid-www](https://github.com/tfgrid-studio/tfgrid-www) | Marketing website | ✅ **Live** ([tfgrid.studio](https://tfgrid.studio)) |
@@ -108,14 +108,14 @@ Standalone Apps  +  Universal Deployer  →  ThreeFold Grid
 
 ### Deployment Patterns
 
-**🔹 single-vm** - Simple VM deployment  
-Perfect for: Development, databases, internal services
+**✅ single-vm** - Simple VM deployment  
+Perfect for: Development, databases, internal services, AI agents
 
-**🔹 gateway** (Coming Soon)  
-Perfect for: Web apps, e-commerce, traditional hosting
+**✅ gateway** - Multi-VM with public access  
+Perfect for: Production web apps, e-commerce, SSL-enabled sites
 
-**🔹 k3s** (Coming Soon)  
-Perfect for: Cloud-native apps, microservices, SaaS
+**✅ k3s** - Kubernetes clusters  
+Perfect for: Cloud-native apps, microservices, enterprise SaaS
 
 ---
 
@@ -326,86 +326,102 @@ PostgreSQL, MongoDB, Redis - all supported.
 
 ## 📊 Current Status
 
-**🎉 MVP Complete! (80%)**
+**🎉 Complete First Layer Achieved! (v2.0.0 - Oct 9, 2025)**
 
 ```
-✅ Week 1: Extraction            [████████████████████] 100%
-✅ Week 2: Metadata System       [████████████████████] 100%
-✅ Week 3: CLI Development       [████████████████████] 100%
-✅ Week 4: Orchestration         [████████████████████] 100%
-⏳ Week 5: Testing               [░░░░░░░░░░░░░░░░░░░░]   0%
-⏳ Week 6: Documentation         [░░░░░░░░░░░░░░░░░░░░]   0%
+✅ Phase 1: Foundation           [████████████████████] 100%
+✅ Phase 2: Complete First Layer [████████████████████] 100%
+⏳ Phase 3: Testing & Polish     [████░░░░░░░░░░░░░░░░]  20%
+⏳ Phase 4: Web Dashboard        [░░░░░░░░░░░░░░░░░░░░]   0%
 ```
 
 **What's Working:**
+- ✅ All 3 deployment patterns (single-vm, gateway, k3s)
 - ✅ Full deployment orchestration
-- ✅ Pattern system (single-vm)
-- ✅ App manifest system
+- ✅ Pattern Contract system
 - ✅ Complete CLI tool
-- ✅ State management
-- ✅ All commands functional
+- ✅ SSL automation (Let's Encrypt)
+- ✅ Kubernetes cluster deployment
+- ✅ Comprehensive documentation
 
 **Next:**
-- Testing with real TFGrid accounts
-- Documentation polish
-- v1.0.0 release
+- End-to-end testing (gateway & k3s patterns)
+- Performance benchmarks
+- Additional example apps
 
 ---
 
 ## 🚀 Roadmap
 
-### Phase 1: MVP (Current - Week 5-6)
+### Phase 1: Foundation ✅ (Completed - Oct 8, 2025)
 
-**Focus:** single-vm pattern + tfgrid-ai-agent
+**Focus:** single-vm pattern + core platform
 
 **Deliverables:**
 - ✅ Core deployer working
 - ✅ One reference app (AI agent)
-- ⏳ Production testing
-- ⏳ v1.0.0 release
+- ✅ Production testing
+- ✅ v1.0.0 release
 
-**Target:** October 2025
-
----
-
-### Phase 2: Complete FOSS Platform (Months 2-3)
-
-**Focus:** All patterns + multiple apps
-
-**Deliverables:**
-- Gateway pattern
-- K3s pattern
-- 5-10 example apps
-- Comprehensive docs
-- Community building
-
-**Target:** December 2025
+**Result:** Production-ready MVP
 
 ---
 
-### Phase 3: Commercial Layer (Months 4-6)
+### Phase 2: Complete First Layer ✅ (Completed - Oct 9, 2025)
 
-**Focus:** SaaS dashboard
+**Focus:** All 3 core patterns
 
 **Deliverables:**
-- tfgrid-web (managed platform)
-- Team features
-- Billing integration
-- Beta launch
+- ✅ Gateway pattern (multi-VM, SSL, public access)
+- ✅ K3s pattern (Kubernetes clusters)
+- ✅ Pattern Contract system
+- ✅ Comprehensive pattern documentation
+- ✅ v2.0.0 release
+
+**Result:** Complete deployment solution for all use cases
+
+---
+
+### Phase 3: Testing & Polish (Current - Q4 2025)
+
+**Focus:** Verification & ecosystem growth
+
+**Deliverables:**
+- [ ] End-to-end testing (gateway & k3s)
+- [ ] Performance benchmarks
+- [ ] 5-10 example apps
+- [ ] Automated test suite
+- [ ] Community building
+
+**Target:** November 2025
+
+---
+
+### Phase 4: Web Dashboard (Q4 2025 - Q1 2026)
+
+**Focus:** Visual management platform
+
+**Deliverables:**
+- [ ] tfgrid-web (SaaS dashboard)
+- [ ] Visual deployment management
+- [ ] Real-time monitoring
+- [ ] Team collaboration
+- [ ] User authentication
 
 **Target:** Q1 2026
 
 ---
 
-### Phase 4: Marketplace & Enterprise (Months 7-12)
+### Phase 5: Marketplace & Enterprise (Q1-Q3 2026)
 
-**Focus:** Ecosystem growth
+**Focus:** Ecosystem & revenue
 
 **Deliverables:**
-- App marketplace
-- Enterprise features
-- Partner program
-- Revenue generation
+- [ ] App marketplace
+- [ ] One-click deployments
+- [ ] Enterprise features (SSO, SAML)
+- [ ] Partner program
+- [ ] Revenue generation
 
 **Target:** Q2-Q3 2026
 
