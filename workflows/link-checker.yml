@@ -1,0 +1,61 @@
+name: Check Links
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly on Sunday
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check External Links
+        run: |
+          echo "Checking TFGrid Studio Ecosystem Links..."
+          
+          # Main sites to check
+          SITES=(
+            "https://tfgrid.studio"
+            "https://docs.tfgrid.studio"
+            "https://registry.tfgrid.studio"
+            "https://install.tfgrid.studio"
+          )
+          
+          # Critical pages to verify
+          PAGES=(
+            "https://docs.tfgrid.studio/roadmap/"
+            "https://docs.tfgrid.studio/roadmap/now/"
+            "https://docs.tfgrid.studio/roadmap/next/"
+            "https://docs.tfgrid.studio/roadmap/later/"
+            "https://docs.tfgrid.studio/getting-started/quickstart/"
+            "https://docs.tfgrid.studio/getting-started/installation/"
+            "https://registry.tfgrid.studio/"
+          )
+          
+          echo ""
+          echo "=== Checking Main Sites ==="
+          for site in "${SITES[@]}"; do
+            echo -n "Checking $site... "
+            if curl -f -s -o /dev/null "$site"; then
+              echo "✅ OK"
+            else
+              echo "❌ FAILED"
+              exit 1
+            fi
+          done
+          
+          echo ""
+          echo "=== Checking Critical Pages ==="
+          for page in "${PAGES[@]}"; do
+            echo -n "Checking $page... "
+            if curl -f -s -o /dev/null "$page"; then
+              echo "✅ OK"
+            else
+              echo "❌ FAILED"
+              exit 1
+            fi
+          done
+          
+          echo ""
+          echo "✅ All links checked successfully!"
