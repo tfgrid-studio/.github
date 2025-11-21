@@ -54,6 +54,18 @@ tfgrid-compose up my-app
 | [tfgrid-docs](https://github.com/tfgrid-studio/tfgrid-docs) | Complete documentation | ✅ **Live** ([docs.tfgrid.studio](https://docs.tfgrid.studio)) |
 | [tfgrid-www](https://github.com/tfgrid-studio/tfgrid-www) | Marketing website | ✅ **Live** ([tfgrid.studio](https://tfgrid.studio)) |
 
+### 📦 Other Public Repositories
+
+| Repository | Description | Status |
+|------------|-------------|--------|
+| [tfgrid-ai-stack](https://github.com/tfgrid-studio/tfgrid-ai-stack) | AI-powered development stack (AI agent + Git + gateway on single VM) | Active |
+| [tfgrid-gitea](https://github.com/tfgrid-studio/tfgrid-gitea) | Standalone Gitea Git service | Active |
+| [app-registry](https://github.com/tfgrid-studio/app-registry) | Official app registry consumed by `tfgrid-compose` | Active |
+| [install](https://github.com/tfgrid-studio/install) | One-line installer (`install.tfgrid.studio`) | Live |
+| [registry-www](https://github.com/tfgrid-studio/registry-www) | Registry website (`registry.tfgrid.studio`) | Live |
+| [community](https://github.com/tfgrid-studio/community) | Community docs, ecosystem tables, contribution info | Active |
+| [tfgrid-internal](https://github.com/tfgrid-studio/tfgrid-internal) | Internal design docs, roadmaps and experiments | Internal |
+
 ### 🔒 Commercial (Private - Future)
 
 | Repository | Description | Status | Timeline |
@@ -61,6 +73,10 @@ tfgrid-compose up my-app
 | tfgrid-web | Web dashboard (SaaS) | 📋 Planned | Q2 2026 |
 | tfgrid-marketplace | App marketplace | 📋 Planned | Q3 2026 |
 | tfgrid-enterprise | Enterprise features (SSO, audit logs) | 📋 Custom | On demand |
+
+For a high-level visual map of how these pieces fit together, see:
+
+- **Platform Map:** https://docs.tfgrid.studio/architecture/platform-map
 
 ---
 
