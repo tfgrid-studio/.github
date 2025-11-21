@@ -53,11 +53,6 @@ tfgrid-compose up my-app
 | [tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent) | AI coding agent | ✅ **Production Ready (v2.0.0)** |
 | [tfgrid-docs](https://github.com/tfgrid-studio/tfgrid-docs) | Complete documentation | ✅ **Live** ([docs.tfgrid.studio](https://docs.tfgrid.studio)) |
 | [tfgrid-www](https://github.com/tfgrid-studio/tfgrid-www) | Marketing website | ✅ **Live** ([tfgrid.studio](https://tfgrid.studio)) |
-
-### 📦 Other Public Repositories
-
-| Repository | Description | Status |
-|------------|-------------|--------|
 | [tfgrid-ai-stack](https://github.com/tfgrid-studio/tfgrid-ai-stack) | AI-powered development stack (AI agent + Git + gateway on single VM) | Active |
 | [tfgrid-gitea](https://github.com/tfgrid-studio/tfgrid-gitea) | Standalone Gitea Git service | Active |
 | [app-registry](https://github.com/tfgrid-studio/app-registry) | Official app registry consumed by `tfgrid-compose` | Active |
