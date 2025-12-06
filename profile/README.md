@@ -53,8 +53,11 @@ tfgrid-compose up my-app
 | [tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent) | AI coding agent | ✅ **Production Ready (v2.0.0)** |
 | [tfgrid-docs](https://github.com/tfgrid-studio/tfgrid-docs) | Complete documentation | ✅ **Live** ([docs.tfgrid.studio](https://docs.tfgrid.studio)) |
 | [tfgrid-www](https://github.com/tfgrid-studio/tfgrid-www) | Marketing website | ✅ **Live** ([tfgrid.studio](https://tfgrid.studio)) |
-| [tfgrid-ai-stack](https://github.com/tfgrid-studio/tfgrid-ai-stack) | AI-powered development stack (AI agent + Git + gateway on single VM) | Active |
-| [tfgrid-gitea](https://github.com/tfgrid-studio/tfgrid-gitea) | Standalone Gitea Git service | Active |
+| [tfgrid-ai-stack](https://github.com/tfgrid-studio/tfgrid-ai-stack) | AI-powered development stack (AI agent + Git + gateway on single VM) | ✅ Active |
+| [tfgrid-gitea](https://github.com/tfgrid-studio/tfgrid-gitea) | Standalone Gitea Git service | ✅ Active |
+| [tfgrid-wordpress](https://github.com/tfgrid-studio/tfgrid-wordpress) | Self-hosted WordPress with Caddy and MariaDB | ✅ **New** |
+| [tfgrid-nextcloud](https://github.com/tfgrid-studio/tfgrid-nextcloud) | Nextcloud All-in-One cloud platform | ✅ **New** |
+| [tfgrid-erpnext](https://github.com/tfgrid-studio/tfgrid-erpnext) | Open-source ERP system (Frappe/ERPNext) | ✅ **New** |
 | [app-registry](https://github.com/tfgrid-studio/app-registry) | Official app registry consumed by `tfgrid-compose` | Active |
 | [install](https://github.com/tfgrid-studio/install) | One-line installer (`install.tfgrid.studio`) | Live |
 | [registry-www](https://github.com/tfgrid-studio/registry-www) | Registry website (`registry.tfgrid.studio`) | Live |
@@ -90,20 +93,26 @@ make install
 ### Deploy an App
 
 ```bash
-# Deploy the AI agent
+# Deploy WordPress (interactive mode - prompts for domain, DNS, etc.)
+tfgrid-compose up tfgrid-wordpress -i
+
+# Deploy Nextcloud cloud platform
+tfgrid-compose up tfgrid-nextcloud -i
+
+# Deploy ERPNext business system
+tfgrid-compose up tfgrid-erpnext -i
+
+# Deploy AI coding agent
 tfgrid-compose up tfgrid-ai-agent
 
 # Check status
-tfgrid-compose status tfgrid-ai-agent
-
-# View logs
-tfgrid-compose logs tfgrid-ai-agent
+tfgrid-compose status <app-name>
 
 # SSH into VM
-tfgrid-compose ssh tfgrid-ai-agent
+tfgrid-compose ssh <app-name>
 
 # Destroy when done
-tfgrid-compose down tfgrid-ai-agent
+tfgrid-compose down <app-name>
 ```
 
 ---
@@ -337,28 +346,38 @@ PostgreSQL, MongoDB, Redis - all supported.
 
 ## 📊 Current Status
 
-**🎉 Complete First Layer Achieved! (v2.0.0 - Oct 9, 2025)**
+**🎉 6 Production Apps Available! (Dec 2025)**
 
 ```
 ✅ Phase 1: Foundation           [████████████████████] 100%
 ✅ Phase 2: Complete First Layer [████████████████████] 100%
-⏳ Phase 3: Testing & Polish     [████░░░░░░░░░░░░░░░░]  20%
+✅ Phase 3: App Ecosystem        [████████████████░░░░]  80%
 ⏳ Phase 4: Web Dashboard        [░░░░░░░░░░░░░░░░░░░░]   0%
 ```
 
 **What's Working:**
 - ✅ All 3 deployment patterns (single-vm, gateway, k3s)
 - ✅ Full deployment orchestration
-- ✅ Pattern Contract system
-- ✅ Complete CLI tool
-- ✅ SSL automation (Let's Encrypt)
-- ✅ Kubernetes cluster deployment
+- ✅ Interactive deployment mode (`-i` flag)
+- ✅ DNS automation (Cloudflare, Name.com, Namecheap)
+- ✅ SSL automation (Let's Encrypt via Caddy)
+- ✅ 6 production-ready apps in registry
 - ✅ Comprehensive documentation
 
+**Available Apps:**
+| App | Description | Status |
+|-----|-------------|--------|
+| tfgrid-ai-agent | AI coding assistant | ✅ Production |
+| tfgrid-ai-stack | AI + Git + Gateway stack | ✅ Production |
+| tfgrid-gitea | Self-hosted Git service | ✅ Production |
+| tfgrid-wordpress | WordPress + Caddy + MariaDB | ✅ **New** |
+| tfgrid-nextcloud | Nextcloud All-in-One | ✅ **New** |
+| tfgrid-erpnext | ERPNext business ERP | ✅ **New** |
+
 **Next:**
-- End-to-end testing (gateway & k3s patterns)
-- Performance benchmarks
-- Additional example apps
+- Web dashboard (Q1 2026)
+- App marketplace
+- More community apps
 
 ---
 
@@ -393,18 +412,19 @@ PostgreSQL, MongoDB, Redis - all supported.
 
 ---
 
-### Phase 3: Testing & Polish (Current - Q4 2025)
+### Phase 3: App Ecosystem ✅ (Current - Dec 2025)
 
-**Focus:** Verification & ecosystem growth
+**Focus:** Production apps & ecosystem growth
 
 **Deliverables:**
-- [ ] End-to-end testing (gateway & k3s)
-- [ ] Performance benchmarks
-- [ ] 5-10 example apps
+- ✅ Interactive deployment mode
+- ✅ DNS automation (Cloudflare, Name.com, Namecheap)
+- ✅ 6 production-ready apps
+- ✅ WordPress, Nextcloud, ERPNext apps
 - [ ] Automated test suite
 - [ ] Community building
 
-**Target:** November 2025
+**Status:** 80% complete
 
 ---
 
@@ -512,17 +532,27 @@ See individual repositories for CONTRIBUTING.md guides.
 
 ## 🌟 Showcase
 
-### Example Apps
+### Production Apps
 
 **AI Coding Agent** - [tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent)  
 Isolated AI coding environment with loop technique and Qwen integration
 
+**WordPress** - [tfgrid-wordpress](https://github.com/tfgrid-studio/tfgrid-wordpress)  
+Self-hosted WordPress with Caddy (auto-SSL), MariaDB, and DNS automation
+
+**Nextcloud** - [tfgrid-nextcloud](https://github.com/tfgrid-studio/tfgrid-nextcloud)  
+Nextcloud All-in-One cloud platform with file sync, calendar, Talk, and Office
+
+**ERPNext** - [tfgrid-erpnext](https://github.com/tfgrid-studio/tfgrid-erpnext)  
+Complete open-source ERP with accounting, inventory, HR, CRM, and more
+
+**Gitea** - [tfgrid-gitea](https://github.com/tfgrid-studio/tfgrid-gitea)  
+Lightweight self-hosted Git service
+
 **Coming Soon:**
-- WordPress (gateway pattern)
 - Next.js (gateway pattern)
 - SaaS Starter (k3s pattern)
 - PostgreSQL (single-vm pattern)
-- Redis (single-vm pattern)
 
 ---
 
