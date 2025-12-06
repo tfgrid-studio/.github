@@ -16,19 +16,33 @@ Build, deploy, and scale decentralized applications with enterprise-grade tools
 
 **TFGrid Studio** is a complete development platform for ThreeFold Grid. From AI-powered coding to production deployment, we provide everything you need to build decentralized applications.
 
-**Our Products:**
-- 🛠️ **TFGrid Compose** - Docker-compose-like CLI (✅ Available Now)
-- 🤖 **TFGrid AI Agent** - AI coding environment (✅ Available Now)
-- 🌐 **TFGrid Web** - Visual dashboard (🚧 Q2 2026)
-- 🏪 **TFGrid Marketplace** - App store (🚧 Q3 2026)
-- 🏢 **TFGrid Enterprise** - Enterprise features (📋 Custom)
+### What We Offer
+
+**🛠️ TFGrid Compose** - Universal deployment CLI
+- One-command deployment to ThreeFold Grid
+- Interactive mode with DNS automation
+- Local dashboard for managing deployments
+- 3 deployment patterns: single-vm, gateway, k3s
+
+**📦 6 Production-Ready Apps**
+| App | Description |
+|-----|-------------|
+| [tfgrid-wordpress](https://github.com/tfgrid-studio/tfgrid-wordpress) | WordPress + Caddy + MariaDB |
+| [tfgrid-nextcloud](https://github.com/tfgrid-studio/tfgrid-nextcloud) | Nextcloud All-in-One cloud platform |
+| [tfgrid-erpnext](https://github.com/tfgrid-studio/tfgrid-erpnext) | ERPNext business ERP system |
+| [tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent) | AI coding assistant |
+| [tfgrid-ai-stack](https://github.com/tfgrid-studio/tfgrid-ai-stack) | AI + Git + Gateway stack |
+| [tfgrid-gitea](https://github.com/tfgrid-studio/tfgrid-gitea) | Self-hosted Git service |
 
 ```bash
-# Deploy any application with one command
-tfgrid-compose up my-app
+# Install tfgrid-compose
+curl -sSL install.tfgrid.studio/install.sh | sh
+
+# Deploy any app interactively
+tfgrid-compose up tfgrid-wordpress -i
 ```
 
-**Open source CLI. Enterprise-ready platform. No vendor lock-in.**
+**Open source. Enterprise-ready. No vendor lock-in.**
 
 ---
 
@@ -64,14 +78,6 @@ tfgrid-compose up my-app
 | [community](https://github.com/tfgrid-studio/community) | Community docs, ecosystem tables, contribution info | Active |
 | [tfgrid-internal](https://github.com/tfgrid-studio/tfgrid-internal) | Internal design docs, roadmaps and experiments | Internal |
 
-### 🔒 Commercial (Private - Future)
-
-| Repository | Description | Status | Timeline |
-|------------|-------------|--------|----------|
-| tfgrid-web | Web dashboard (SaaS) | 📋 Planned | Q2 2026 |
-| tfgrid-marketplace | App marketplace | 📋 Planned | Q3 2026 |
-| tfgrid-enterprise | Enterprise features (SSO, audit logs) | 📋 Custom | On demand |
-
 For a high-level visual map of how these pieces fit together, see:
 
 - **Platform Map:** https://docs.tfgrid.studio/architecture/platform-map
@@ -83,6 +89,10 @@ For a high-level visual map of how these pieces fit together, see:
 ### Install
 
 ```bash
+# One-line install
+curl -sSL install.tfgrid.studio/install.sh | sh
+
+# Or manual install
 git clone https://github.com/tfgrid-studio/tfgrid-compose
 cd tfgrid-compose
 make install
@@ -463,9 +473,9 @@ PostgreSQL, MongoDB, Redis - all supported.
 ### Open Core Strategy
 
 **FOSS Core (Free Forever):**
-- tfgrid-deployer
+- tfgrid-compose CLI
+- All 6 production apps
 - All deployment patterns
-- CLI tool
 - Community support
 
 **Commercial Layers (Optional):**
