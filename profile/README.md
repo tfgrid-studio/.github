@@ -63,20 +63,19 @@ tfgrid-compose up tfgrid-wordpress -i
 
 | Repository | Description | Status |
 |------------|-------------|--------|
-| [tfgrid-compose](https://github.com/tfgrid-studio/tfgrid-compose) | Main CLI tool (formerly tfgrid-deployer) | ✅ **Production Ready (v2.0.0 - Complete First Layer)** |
-| [tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent) | AI coding agent | ✅ **Production Ready (v2.0.0)** |
+| [tfgrid-compose](https://github.com/tfgrid-studio/tfgrid-compose) | Main CLI tool | ✅ **Production Ready** |
 | [tfgrid-docs](https://github.com/tfgrid-studio/tfgrid-docs) | Complete documentation | ✅ **Live** ([docs.tfgrid.studio](https://docs.tfgrid.studio)) |
 | [tfgrid-www](https://github.com/tfgrid-studio/tfgrid-www) | Marketing website | ✅ **Live** ([tfgrid.studio](https://tfgrid.studio)) |
-| [tfgrid-ai-stack](https://github.com/tfgrid-studio/tfgrid-ai-stack) | AI-powered development stack (AI agent + Git + gateway on single VM) | ✅ Active |
-| [tfgrid-gitea](https://github.com/tfgrid-studio/tfgrid-gitea) | Standalone Gitea Git service | ✅ Active |
-| [tfgrid-wordpress](https://github.com/tfgrid-studio/tfgrid-wordpress) | Self-hosted WordPress with Caddy and MariaDB | ✅ **New** |
-| [tfgrid-nextcloud](https://github.com/tfgrid-studio/tfgrid-nextcloud) | Nextcloud All-in-One cloud platform | ✅ **New** |
-| [tfgrid-erpnext](https://github.com/tfgrid-studio/tfgrid-erpnext) | Open-source ERP system (Frappe/ERPNext) | ✅ **New** |
-| [app-registry](https://github.com/tfgrid-studio/app-registry) | Official app registry consumed by `tfgrid-compose` | Active |
-| [install](https://github.com/tfgrid-studio/install) | One-line installer (`install.tfgrid.studio`) | Live |
-| [registry-www](https://github.com/tfgrid-studio/registry-www) | Registry website (`registry.tfgrid.studio`) | Live |
-| [community](https://github.com/tfgrid-studio/community) | Community docs, ecosystem tables, contribution info | Active |
-| [tfgrid-internal](https://github.com/tfgrid-studio/tfgrid-internal) | Internal design docs, roadmaps and experiments | Internal |
+| [install](https://github.com/tfgrid-studio/install) | One-line installer | ✅ **Live** ([install.tfgrid.studio](https://install.tfgrid.studio)) |
+| [registry-www](https://github.com/tfgrid-studio/registry-www) | App registry browser | ✅ **Live** ([registry.tfgrid.studio](https://registry.tfgrid.studio)) |
+| [app-registry](https://github.com/tfgrid-studio/app-registry) | Official app registry data | ✅ Active |
+| [tfgrid-wordpress](https://github.com/tfgrid-studio/tfgrid-wordpress) | WordPress + Caddy + MariaDB | ✅ **New** |
+| [tfgrid-nextcloud](https://github.com/tfgrid-studio/tfgrid-nextcloud) | Nextcloud All-in-One | ✅ **New** |
+| [tfgrid-erpnext](https://github.com/tfgrid-studio/tfgrid-erpnext) | ERPNext business ERP | ✅ **New** |
+| [tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent) | AI coding assistant | ✅ Production |
+| [tfgrid-ai-stack](https://github.com/tfgrid-studio/tfgrid-ai-stack) | AI + Git + Gateway stack | ✅ Production |
+| [tfgrid-gitea](https://github.com/tfgrid-studio/tfgrid-gitea) | Self-hosted Git service | ✅ Production |
+| [community](https://github.com/tfgrid-studio/community) | Community docs & discussions | ✅ Active |
 
 For a high-level visual map of how these pieces fit together, see:
 
