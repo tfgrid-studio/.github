@@ -77,6 +77,15 @@ tfgrid-compose up tfgrid-wordpress -i
 | [tfgrid-gitea](https://github.com/tfgrid-studio/tfgrid-gitea) | Self-hosted Git service | ✅ Production |
 | [community](https://github.com/tfgrid-studio/community) | Community docs & discussions | ✅ Active |
 
+### 🚧 Planned / Commercial
+
+| Repository | Description | Status |
+|------------|-------------|--------|
+| [tfgrid-portal](https://github.com/tfgrid-studio/tfgrid-portal) | Hosted web dashboard (SaaS frontend) | 🚧 In Development |
+| [tfgrid-control-plane](https://github.com/tfgrid-studio/tfgrid-control-plane) | Backend API for portal (users, billing, workspaces) | 🚧 In Development |
+| tfgrid-marketplace | App marketplace | 📋 Planned |
+| tfgrid-enterprise | Enterprise features (SSO, audit logs) | 📋 Planned |
+
 For a high-level visual map of how these pieces fit together, see:
 
 - **Platform Map:** https://docs.tfgrid.studio/architecture/platform-map
