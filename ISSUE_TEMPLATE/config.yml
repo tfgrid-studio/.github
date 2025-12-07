@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Community Discussions
+    url: https://github.com/orgs/tfgrid-studio/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: Documentation
+    url: https://docs.tfgrid.studio
+    about: Check the documentation for answers
+  - name: Security Issues
+    url: mailto:security@tfgrid.studio
+    about: Report security vulnerabilities privately via email
