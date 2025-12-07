@@ -437,12 +437,12 @@ PostgreSQL, MongoDB, Redis - all supported.
 
 ---
 
-### Phase 4: Web Dashboard (Q4 2025 - Q1 2026)
+### Phase 4: Portal (Q4 2025 - Q1 2026)
 
 **Focus:** Visual management platform
 
 **Deliverables:**
-- [ ] tfgrid-web (SaaS dashboard)
+- [ ] tfgrid-portal (hosted web dashboard)
 - [ ] Visual deployment management
 - [ ] Real-time monitoring
 - [ ] Team collaboration
