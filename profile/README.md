@@ -66,7 +66,7 @@ tfgrid-compose up tfgrid-wordpress -i
 | [tfgrid-compose](https://github.com/tfgrid-studio/tfgrid-compose) | Main CLI tool | ✅ **Production Ready** |
 | [tfgrid-docs](https://github.com/tfgrid-studio/tfgrid-docs) | Complete documentation | ✅ **Live** ([docs.tfgrid.studio](https://docs.tfgrid.studio)) |
 | [tfgrid-www](https://github.com/tfgrid-studio/tfgrid-www) | Marketing website | ✅ **Live** ([tfgrid.studio](https://tfgrid.studio)) |
-| [install](https://github.com/tfgrid-studio/install) | One-line installer | ✅ **Live** ([install.tfgrid.studio](https://install.tfgrid.studio)) |
+| [tfgrid-install](https://github.com/tfgrid-studio/tfgrid-install) | One-line installer | ✅ **Live** ([install.tfgrid.studio](https://install.tfgrid.studio)) |
 | [registry-www](https://github.com/tfgrid-studio/registry-www) | App registry browser | ✅ **Live** ([registry.tfgrid.studio](https://registry.tfgrid.studio)) |
 | [app-registry](https://github.com/tfgrid-studio/app-registry) | Official app registry data | ✅ Active |
 | [tfgrid-wordpress](https://github.com/tfgrid-studio/tfgrid-wordpress) | WordPress + Caddy + MariaDB | ✅ **New** |
